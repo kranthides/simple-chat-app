@@ -13,7 +13,7 @@
 	<artifactId>simple-chat-app</artifactId>
 	<version>1.0</version>
 	<name>simple-chat-app</name>
-	<description>Shared Services </description>
+	<description>Shared Services </description> 
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
