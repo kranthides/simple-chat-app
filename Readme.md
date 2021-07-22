@@ -41,3 +41,11 @@ User1 & USer2 can communicate using the above-mentioned APIs, All the incoming m
 * Authentication and Autherization 
 * CI/CD pipeline using Docker/ Kubernates 
 * Unit test cases 
+
+# Steps to build and run the job 
+
+git clone https://github.com/kranthides/simple-chat-app.git
+cd simple-chat-app
+mvn spring-boot:run
+
+
