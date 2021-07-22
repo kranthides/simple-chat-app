@@ -6,6 +6,12 @@ This java app is created using Spring Boot and h2 in-memory database. It has 3 e
 2. getMessageForSender 
 3. getMessageBetweenSenderAndReceiver
 
+Tech Stack 
+* Spring boot Rest
+* Spring data/Spring JPA 
+* H2 Database 
+* Heroku 
+
 # Database Modeling 
  
 For the simplicity of the app, I have created an object to store the messages. column sentDate will be helpful to test the old messages. 
