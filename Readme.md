@@ -86,3 +86,8 @@ numberOfDays -> Is optional parameter
 
 
 when there are no messages for the specific user, Service will return http status code as 204
+
+
+This APP is also available on heroku. Please reach me if the app following url is not showing up.  
+
+https://simple-chat-app-kk.herokuapp.com/swagger-ui.html
