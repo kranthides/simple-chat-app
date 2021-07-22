@@ -48,4 +48,41 @@ git clone https://github.com/kranthides/simple-chat-app.git
 cd simple-chat-app
 mvn spring-boot:run
 
+http://localhost:8080/swagger-ui.html
 
+### Send Message API Request 
+
+```
+{
+  "sender": "james",
+  "recipient": "kranthi",
+  "shortMessage": "string",
+}
+
+curl -X POST "http://localhost:8080/api/message" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"recipient\": \"string\", \"sender\": \"string\", \"shortMessage\": \"string\",}"
+```
+When Success , it returns ID of the message and http status code 200
+
+### getMessagesForSender
+```
+curl -X GET "http://localhost:8080/api/message/kranthi" -H "accept: */*"
+
+or 
+
+curl -X GET "http://localhost:8080/api/message/kranthi?numberOfDays=30" -H "accept: */*"
+```
+numberOfDays -> Is optional parameter 
+
+
+### getMessageBetweenSenderAndReceiver
+```
+curl -X GET "http://localhost:8080/api/message/kranthi/sam" -H "accept: */*""
+
+or 
+
+curl -X GET "http://localhost:8080/api/message/kranthi/sam?numberOfDays=30" -H "accept: */*""
+```
+numberOfDays -> Is optional parameter 
+
+
+when there are no messages for the specific user, Service will return http status code as 204
